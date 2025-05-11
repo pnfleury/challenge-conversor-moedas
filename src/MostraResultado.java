@@ -10,7 +10,7 @@ public class MostraResultado {
         System.out.println("\nDigite o valor:");
         double valor = leitura.nextDouble();
         Moeda moedaConvertida = novabusca.buscaconversao(valor, base, alvo);
-        System.out.println("Valor convertido: " + moedaConvertida.conversion_result() + "\nTaxa de cambio: " + moedaConvertida.conversion_rate() + "\n");
+        System.out.println("(" + base + ")" + valor + " ==> CONVERSÃO ==> (" + alvo + ")" + moedaConvertida.conversion_result() + " (Taxa cambio: " + moedaConvertida.conversion_rate() + ")" + "\n");
 
     }
 }

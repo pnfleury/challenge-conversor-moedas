@@ -37,14 +37,14 @@ public class Principal {
                         x = 2;
                         break;
                     default:
-                        System.out.println("Opção invalida...");
+                        System.out.println("Opção invalida...tente de novo.");
                         break;
                 }
             } catch (InputMismatchException e) {
-                System.out.println("ERRO: Caracteres não numéricos...");
+                System.out.println("ERRO: Caracteres invalidos..." + e);
                 leitura.nextLine();
             } catch (FileNotFoundException | UnknownHostException e) {
-                System.out.println("ERRO: Na tentatica de conversão.");
+                System.out.println("ERRO: valor invalido ou na busca do cambio...");
             }
         }
     }
